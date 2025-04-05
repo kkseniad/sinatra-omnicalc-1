@@ -22,6 +22,14 @@ get("/square_root/new") do
   erb(:square_root)
 end
 
+get("/square_root/results") do
+  @number = params.fetch("number").to_i
+
+  @square_root = @number ** 0.5
+
+  erb(:sq_root_res)
+end
+
 get("/random/new") do
   erb(:rand)
 end
