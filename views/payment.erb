@@ -1,21 +1,21 @@
-<form action="/payment/result">
+<form action="/payment/results">
 
   <div>
-    <label for="min">APR</label>
+    <label for="apr">APR</label>
 
-    <input id="min" type="text" name="min">
+    <input id="apr" type="text" name="user_apr" placeholder="E.g. 5.42">
   </div>
 
   <div>
-    <label for="max">Number of years</label>
+    <label for="years">Number of years</label>
 
-    <input id="max" type="text" name="max">
+    <input id="years" type="text" name="user_years" placeholder="How many years to repay?">
   </div>
   
   <div>
-    <label for="max">Number of years</label>
+    <label for="principal">Principal</label>
 
-    <input id="max" type="text" name="max">
+    <input id="principal" type="text" name="user_pv" placeholder="How much principal?">
   </div>
 
   <button>Calculate monthly payment</button>
