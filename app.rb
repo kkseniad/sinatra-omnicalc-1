@@ -10,7 +10,7 @@ get("/square/new") do
 end
 
 get("/square/results") do
-  @number = params.fetch("number").to_i
+  @number = params.fetch("number").to_f
 
   @square = @number ** 2
 
@@ -23,7 +23,7 @@ get("/square_root/new") do
 end
 
 get("/square_root/results") do
-  @number = params.fetch("number").to_i
+  @number = params.fetch("number").to_f
 
   @square_root = @number ** 0.5
 
@@ -35,9 +35,9 @@ get("/random/new") do
 end
 
 get("/random/results") do
-  @min_num = params.fetch("user_min").to_i
+  @min_num = params.fetch("user_min").to_f
 
-  @max_num = params.fetch("user_max").to_i
+  @max_num = params.fetch("user_max").to_f
 
   @rand_num = rand(@min_num..@max_num)
   
